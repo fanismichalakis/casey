@@ -3,8 +3,9 @@
 Casey is a simple CLI tool that allows you yo print stats about your Lightning Network routing node right in your terminal.
 For now, it performs one really simple task : summing up all routing data in one table :
 
-(index) | alias | total_routed_volume_sat_in | total_routed_volume_sat_out | total_collected_fee
-remote node pubkey | it's alias | total number of sats routed from this node to another node | total number of sats routed from another node to this node | total fee collected from this node |
+| (index) | alias | total_routed_volume_sat_in | total_routed_volume_sat_out | total_collected_fee |
+| :---: | :---: | :---: | :---: | :---: |
+| remote node pubkey | remote node alias | total number of sats routed from this node to another node | total number of sats routed from another node to this node | total fee collected from this node |
 
 It also displays the sum of sats routed + the total collected fee.
 
