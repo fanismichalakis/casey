@@ -8,7 +8,7 @@ then
     ./getStats.sh
 elif [ $1 = "centrality" ]
 then
-    #lncli listchannels | cat > data/betweenessCentrality.json
+    lncli getnodemetrics | cat > data/betweenessCentrality.json
     node scripts/betweenessCentrality.js $2
 else
     echo "Display help"
